@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -35,34 +36,20 @@ public class SeleniumGridTest {
 
 	@Test
 	public void test() throws MalformedURLException {
-<<<<<<< HEAD
 		DesiredCapabilities dc = DesiredCapabilities.chrome();
 		dc.setBrowserName("chrome");
 		dc.setPlatform(Platform.LINUX);
-		
-		//please do register for which node this test will run 
+
+		//please do register for which node this test will run
 		URL url = new URL("http://automation_hub:4444/wd/hub");
 		WebDriver driver = new RemoteWebDriver(url,dc);
 		//managing the driver utility
 		driver.manage().deleteAllCookies();
-		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);
-		
 		driver.get("http://www.google.com");
 		String title = driver.getTitle();
 		System.out.println("The title is : >>>>>> "+title);
-=======
-		DesiredCapabilities ds = DesiredCapabilities.chrome();
-		//ds.setCapability("version", "61.0.3163.100");
-		ds.setCapability("browser_version", "61.0.3163.100");
-		ds.setPlatform(Platform.LINUX);
-		URL url = new URL("http://192.168.33.1:4444/wd/hub");
-		WebDriver driver = new RemoteWebDriver(url,ds);
-		driver.get("http://www.google.com");
-		String title = driver.getTitle();
-		System.out.println(title);
->>>>>>> parent of 819680e... added selenium grid poc
 		driver.quit();
 	}
 

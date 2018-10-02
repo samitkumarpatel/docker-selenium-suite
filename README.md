@@ -2,11 +2,11 @@
 
 * This project contain a selenium based project which require a real browser to run and evaluate the test assert, and our goal to achive that expectation through CI/CD based environment which is installed in non-GUI based Linux machine.
 
-* Expected technology being used for this are -
+* Expected technology being used are -
 ````
 jdk 1.8
 selenium
-selenium grod
+selenium grid
 seleniun grid based chrome node
 docker
 docker-compose

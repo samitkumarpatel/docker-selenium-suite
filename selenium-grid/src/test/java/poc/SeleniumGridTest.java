@@ -39,7 +39,8 @@ public class SeleniumGridTest {
 		DesiredCapabilities dc = DesiredCapabilities.chrome();
 		dc.setBrowserName("chrome");
 		dc.setPlatform(Platform.LINUX);
-
+		dc.setVersion("55.0.2");
+		
 		//please do register for which node this test will run
 		URL url = new URL("http://automation_hub:4444/wd/hub");
 		WebDriver driver = new RemoteWebDriver(url,dc);

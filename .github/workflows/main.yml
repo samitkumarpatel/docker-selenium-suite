@@ -16,8 +16,8 @@ jobs:
     - name: Run a one-line script
       run: echo Hello, world!
       
-    - name: GitHub Action for Maven
-      uses: LucaFeger/action-maven-cli@1.1.0
+    - name: Setup Maven 3
+      uses: aahmed-se/setup-maven@v3
     
     - run: |
         mvn -f selenium-test-suite/selenium-webdriver/pom.xml test

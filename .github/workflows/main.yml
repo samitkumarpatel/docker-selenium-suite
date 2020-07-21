@@ -20,4 +20,4 @@ jobs:
       uses: aahmed-se/setup-maven@v3
     
     - run: |
-        mvn -f selenium-webdriver/pom.xml test
+        mvn -B -e -f selenium-webdriver/pom.xml test

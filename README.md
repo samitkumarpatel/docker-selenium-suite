@@ -1,5 +1,10 @@
 # docker-selenium-suite #
 
+**Selenium Official Documentation**
+* [example for different language](https://www.selenium.dev/documentation/en/)
+* [dependency details] https://www.selenium.dev/documentation/en/selenium_installation/installing_selenium_libraries/)
+
+
 * This project contain a selenium based project which require a real browser to run and evaluate the test assert, and our goal to achive that expectation through CI/CD based environment which is installed in non-GUI based Linux machine.
 
 * Expected technology being used are -

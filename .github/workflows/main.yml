@@ -1,0 +1,23 @@
+# This is a basic workflow to help you get started with Actions
+
+name: selenium-gui-test
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run a one-line script
+      run: echo Hello, world!
+      
+    - name: GitHub Action for Maven
+      uses: LucaFeger/action-maven-cli@1.1.0
+    
+    - run: |
+        mvn -f selenium-test-suite/selenium-webdriver/pom.xml test

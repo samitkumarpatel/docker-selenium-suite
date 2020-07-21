@@ -17,7 +17,7 @@ public class GUITest {
 
 		
 		driver.get("https://google.com");
-		Assertions.assertEquals("google",driver.getTitle());
+		Assertions.assertEquals("Google",driver.getTitle());
 		
 		/*
 		driver.findElement(By.name("q")).sendKeys("cheese" + Keys.ENTER);
